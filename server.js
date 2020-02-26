@@ -9,7 +9,7 @@ const image = require('./controllers/image')
 const db = require('knex')({
   client: 'pg',
   connection: {
-    host : 'localhost',
+    host : 'postgresql-crystalline-30429',
     user : 'jakesing',
     password : '',
     database : 'facedetect'
