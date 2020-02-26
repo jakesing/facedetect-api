@@ -26,7 +26,7 @@ app.use(cors());
 
 //get request for root
 app.get('/', (req, res)=> {
-	res.send(database.users)
+	res.send('it is working')
 })
 
 //post request for signin
