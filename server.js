@@ -9,7 +9,7 @@ const image = require('./controllers/image')
 const db = require('knex')({
   client: 'pg',
   connection: {
-    connectionString: 'postgres://uongdzwsubysdx:fd5bacb65279aaa1ae57097a0bcbf82819dfe84fddd0c9395637df04bba324b3@ec2-54-197-48-79.compute-1.amazonaws.com:5432/d1k9m2eiorhi8n',
+    connectionString: process.env.DATABASE_URL,
     ssl: true,
   }
 })
